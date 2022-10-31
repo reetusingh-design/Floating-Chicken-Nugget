@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <div class="title">
+      <h1> The <sub>Floating</sub> Chicken Nugget </h1>
+    </div>
+    
+    
+    
+    <!-- <img class"nugget-image" src="nugget3.gif" id="image"/> -->
+    
+    <!-- <div id ="animate"><img class"nugget-image" src="nugget3.gif" id="image"/></div> -->
+    <div id="container">
+    <div id ="animate"><img src="nugget3.gif" id="image" style="width:200px"/></div>
+    <!-- </div> -->
+
+    <!-- <button style="background-color:lime;" onclick="myMove()">Click Me</button>  -->
+
+    <!--<marquee behavior="scroll" direction="down" scrollamount="1"><p style="color:red"><font size="5">Keep Calm and Eat Nuggets</marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="5"><p style="color:springgreen"><font size="5">Keep Calm and Eat Nuggets</marquee>
+    <marquee behavior="scroll" direction="left" scrollamount="10"><p style="color:orange"><font size="5">Keep Calm and Eat Nuggets</marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="20"><p style="color:magenta"><font size="5">Keep Calm and Eat Nuggets</marquee>
+    <marquee behavior="scroll" direction="left" scrollamount="20"><p style="color:violet"><font size="5">Keep Calm and Eat Nuggets</marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="10"><p style="color:peach"><font size="5">Keep Calm and Eat Nuggets</marquee>
+    <marquee behavior="scroll" direction="left" scrollamount="10"><p style="color:blue"><font size="5">Keep Calm and Eat Nuggets</marquee>
+    <marquee behavior="scroll" direction="rightt" scrollamount="50"><p style="color:red"><font size="5">Keep Calm and Eat Nuggets</marquee>
+    <marquee behavior="scroll" direction="left" scrollamount="20"><p style="color:brown"><font size="5">Keep Calm and Eat Nuggets</marquee>-->
+<div class="mar">
+      <marquee behavior="scroll" direction="down" scrollamount="1"><p style="color:red"><font size="5">Keep Calm and Eat Nuggets</marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="5"><p style="color:springgreen"><font size="5">Keep Calm and Eat Nuggets</marquee>
+    <marquee behavior="scroll" direction="left" scrollamount="10"><p style="color:orange"><font size="5">Keep Calm and Eat Nuggets</marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="20"><p style="color:magenta"><font size="5">Keep Calm and Eat Nuggets</marquee>
+    <marquee behavior="scroll" direction="left" scrollamount="20"><p style="color:violet"><font size="5">Keep Calm and Eat Nuggets</marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="10"><p style="color:peach"><font size="5">Keep Calm and Eat Nuggets</marquee>
+    <marquee behavior="scroll" direction="left" scrollamount="5"><p style="color:blue"><font size="5">Keep Calm and Eat Nuggets</marquee>
+</div>
+
+     <img id="img" class"ketchup-image" src="ketchup1.jpg"/>
+
+     <img id="img" class"mustard-image" src="mustard.jpeg"/>
+    
+     <div class="row">
+      <button type="button" class="button1" id="addMeButton1" onclick="catch Up with Ketchup">KETCHUP</button>
+      
+      <button type="button" class="button2" id="addMeButton2" onclick="Enjoy a dip in Honey Mustard">MUSTARD</button>
+
+      <button class="button3" style="background-color:lime;" onclick="myMove()">PLAY WITH NUGGET</button>
+     </div>
+      <!-- <button style="background-color:lime;" onclick="myMove()">Click Me</button> -->
+    </div>
+    <!-- <button style="background-color:lime;" onclick="myMove()">Click Me</button> -->
+
+    <script>
+    function myMove() {
+      var elem = document.getElementById("animate");
+      var pos = 0;
+      var id = setInterval (frame, 7);
+      function frame() {
+        if (pos == 700) {
+          clearInterval(id);
+        } else {
+          pos++;
+          elem.style.top = pos + 'px';
+          elem.style.left = pos + 'px';
+        }
+      }
+    }
+    </script>
+
+    <!-- <marquee behavior="scroll" direction="down" scrollamount="1"><p style="color:red"><font size="5">Keep Calm and Eat Nuggets</marquee> -->
+    <!-- <marquee behavior="scroll" direction="right" scrollamount="5"><p style="color:springgreen"><font size="5">Keep Calm and Eat Nuggets</marquee> -->
+    <!-- <marquee behavior="scroll" direction="left" scrollamount="10"><p style="color:orange"><font size="5">Keep Calm and Eat Nuggets</marquee> -->
+    <!-- <marquee behavior="scroll" direction="right" scrollamount="20"><p style="color:magenta"><font size="5">Keep Calm and Eat Nuggets</marquee> -->
+    <!-- <marquee behavior="scroll" direction="left" scrollamount="20"><p style="color:violet"><font size="5">Keep Calm and Eat Nuggets</marquee> -->
+    <!-- <marquee behavior="scroll" direction="right" scrollamount="10"><p style="color:peach"><font size="5">Keep Calm and Eat Nuggets</marquee> -->
+    <!-- <marquee behavior="scroll" direction="left" scrollamount="5"><p style="color:blue"><font size="5">Keep Calm and Eat Nuggets</marquee> -->
+    <!-- <img class"ketchup-image" src="ketchup1.jpg"/> -->
+    <!-- <img class"mustard-image" src="mustard.jpeg"/> -->
+    
+    <!-- <div class="row"> -->
+      <!-- <button type="button" class="button1" id="addMeButton1" onclick="catch Up with Ketchup">KETCHUP</button> -->
+      
+      <!-- <button type="button" class="button2" id="addMeButton2" onclick="Enjoy a dip in Honey Mustard">MUSTARD</button> -->
+    <!-- </div> -->
+  </body>
+</html>
